@@ -1,0 +1,25 @@
+package src1.tareas;
+import libs.Input;
+public class Minimo_Monedas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Pido el dinero
+		float n=0;
+		System.out.println("Cuanto cambio necesitas?");
+		n = Input.get_int();
+		System.out.println("Me pediste cambio de "+n);
+		//Decision
+		int veinticinco=25, diez=10, cinco=5, uno=1;
+		int op=0;
+		op=(int) (n/veinticinco);
+		//Se toma la decision
+		if(op==1) {
+			System.out.println("ok");
+			System.out.println("Tu cambio es "+op);
+		}
+		
+	}
+
+}

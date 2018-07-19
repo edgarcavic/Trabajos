@@ -1,0 +1,53 @@
+package junit_examples;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class ExampleJUnit extends ParentTest {
+	
+	
+	@Test
+	private void buscarPersona(String string) {
+		// TODO Auto-generated method stub
+		WebElement barBusqueda = driver.findElement(By.id("navbar-query"));
+		barBusqueda.clear();
+		barBusqueda.sendKeys("Back to the Future");
+		
+		
+		//da click en entrar
+		WebElement loginButton = driver.findElement(By.id("navbar-submit-button"));
+		loginButton.click();
+		
+	}
+	@Test
+	public void testSomething0() {
+		//System.out.println("Metodo de prueba 0");
+		
+	}
+	
+	@Test
+	public void testSomething1() {
+		//System.out.println("Metodo de prueba 1");
+	}
+	
+	@Test
+	public void testSomething2() {
+		//System.out.println("Metodo de prueba 2");
+	}
+	
+	@Test
+	public void testSomething3() {
+		//System.out.println("Metodo de prueba 3");
+	}
+	
+	@Test
+	public void testSomething4() {
+		//System.out.println("Metodo de prueba 4");
+	}
+	
+
+
+}

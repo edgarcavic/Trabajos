@@ -1,0 +1,16 @@
+package ejercicios_clase;
+
+public class Baby {
+	char sex;
+	int numDiapers;
+	String name;
+	float weight;
+	
+	Baby(String babyName, char babySex, int numDiapers, double babyweight){
+		this.sex = babySex;
+		this.numDiapers = numDiapers;
+		this.name = babyName;
+		this.weight = babyweight;
+	}
+	
+}

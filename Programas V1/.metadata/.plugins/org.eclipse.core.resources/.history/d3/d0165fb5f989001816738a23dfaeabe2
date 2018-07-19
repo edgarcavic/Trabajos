@@ -1,0 +1,70 @@
+package classExercise;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FacebookAddFriend {
+	static WebDriver driver;
+	
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","C:\\test_automation\\drivers\\chromedriver.exe");
+		
+		
+		//configurar el navegador
+		setUp("chrome","http://www.facebook.com");
+		//iniciar sesion
+		//iniciarSesion("onavarro@kueski.com","Test@1234");
+		iniciarSesion("pruebasxideral@gmail.com","xideral00");
+		//buscar a la persona
+		buscarPersona("Selena Gomez");
+		//validar que existe la persona que busque
+		validarPersona("Selena Gomez");
+		//enviar solicitud de amistad
+		agregarAmigo("Selena Gomez");
+		
+		
+
+	}
+
+	private static void setUp(String string, String string2) {
+		// TODO Auto-generated method stub
+		//driver = chromeDriver();
+		driver = new ChromeDriver();
+		driver.get("http://www.facebook.com");
+	}
+
+	private static void iniciarSesion(String string, String string2) {
+		// TODO Auto-generated method stub
+		WebElement userBox = driver.findElement(By.id("email"));
+		WebElement passwordBox = driver.findElement(By.id("pass"));
+		userBox.clear();
+		userBox.sendKeys("pruebasxideral@gmail.com");
+		passwordBox.sendKeys("xideral00");
+		//passwordBox.sendKeys("xideral00");
+		
+		//da click en entrar
+		WebElement loginButton = driver.findElement(By.id("u_0_2"));
+		
+	}
+
+	private static void buscarPersona(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void validarPersona(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void agregarAmigo(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+		
+
+}

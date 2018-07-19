@@ -1,0 +1,10 @@
+package src1.tareas;
+
+public class Minimo_Monedas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Cuanto cambio necesitas?");
+	}
+
+}

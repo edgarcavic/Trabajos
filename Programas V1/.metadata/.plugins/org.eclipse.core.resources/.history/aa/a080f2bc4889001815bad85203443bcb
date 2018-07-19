@@ -1,0 +1,13 @@
+package src1.tareas;
+import libs.Input;
+public class Minimo_Monedas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float n=0;
+		System.out.println("Cuanto cambio necesitas?");
+		n = Input.get_float();
+		System.out.println("Me pediste cambio de "+n);
+	}
+
+}
